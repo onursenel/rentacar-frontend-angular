@@ -1,0 +1,27 @@
+
+ 
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" *ngFor="let item of list; let i = index">
+        <div class="card" style="width: 18rem;" >
+            <img src={{item.imageUrl}} class="card-img-top" alt="...">
+            
+            <div class="card-body" >
+                
+              <h5 class="card-title">{{item.name}}</h5>
+              <p class="card-text">{{item.dailyPrice}} TL</p>
+              <p class="card-text">{{item.modelYear}} Model</p>
+              <a href="#" class="btn btn-primary">Hemen kirala</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- >= Angular 17 -->
+<!-- @for (item of list; track $index) {
+<p>{{ item.name }} {{ $index }}</p>
+} -->

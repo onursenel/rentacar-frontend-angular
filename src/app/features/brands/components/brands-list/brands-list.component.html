@@ -1,0 +1,10 @@
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+      The current link item
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <ul class="list-group">
+            <p *ngFor="let item of brands; let i = index">{{ item.name }} {{ i }}</p>
+          </ul>
+    </a>
+  </div>
