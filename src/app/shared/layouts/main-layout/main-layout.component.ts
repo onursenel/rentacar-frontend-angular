@@ -3,8 +3,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { BrandsListComponent } from '../../../features/brands/components/brands-list/brands-list.component';
-import { ModelsListComponent } from '../../../features/models/components/models-list/models-list.component';
 
 @Component({
   selector: 'app-main-layout',
@@ -13,9 +11,7 @@ import { ModelsListComponent } from '../../../features/models/components/models-
     CommonModule,
     RouterModule,
     NavbarComponent,
-    FooterComponent,
-    BrandsListComponent,
-    ModelsListComponent
+    FooterComponent
   ],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.scss',
